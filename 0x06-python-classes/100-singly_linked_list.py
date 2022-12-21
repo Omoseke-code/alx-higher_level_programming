@@ -48,7 +48,7 @@ class SinglyLinkedList:
         """initialisation"""
         self.__head = None
 
-    def __str__(self):
+    def __repr__(self):
         """Define the print() representation of a SinglyLinkedList."""
         values = []
         tmp = self.__head
