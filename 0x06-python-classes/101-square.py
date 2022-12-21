@@ -55,6 +55,7 @@ class Square:
                 print('#' * self.size)
         else:
             print()
+
     def __str__(self):
         """printable"""
         to_print = ''
