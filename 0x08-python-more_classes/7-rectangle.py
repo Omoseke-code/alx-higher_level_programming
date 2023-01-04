@@ -7,6 +7,7 @@ class Rectangle:
 
     number_of_instances = 0
     print_symbol = '#'
+
     def __init__(self, width=0, height=0):
         """initalisation
         Args:
@@ -86,5 +87,3 @@ class Rectangle:
 
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
-
