@@ -1,4 +1,4 @@
-base_geometry'' module
+Base_geometry'' module
 ==========================
 
 	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
@@ -28,12 +28,12 @@ base_geometry'' module
 	>>> bg.integer_validator("width", "value")
 	Traceback (most recent call last):
 	...
-	TypeError: <width> must be an integer
+	TypeError: width must be an integer
 
 	>>> bg.integer_validator("width", (2, 3))
 	Traceback (most recent call last):
 	...
-	TypeError: <width> must be an integer
+	TypeError: width must be an integer
 
 	>>> bg.integer_validator()
 	Traceback (most recent call last):
@@ -48,19 +48,19 @@ base_geometry'' module
 	>>> bg.integer_validator("width", -3)
 	Traceback (most recent call last):
 	...
-	ValueError: <width> must be greater than 0
+	ValueError: width must be greater than 0
 
 	>>> bg.integer_validator("width", 0)
 	Traceback (most recent call last):
 	...
-	ValueError: <width> must be greater than 0
+	ValueError: width must be greater than 0
 
 	>>> bg.integer_validator("width", None)
 	Traceback (most recent call last):
 	...
-	TypeError: <width> must be an integer
+	TypeError: width must be an integer
 
 	>>> bg.integer_validator("width", 3.3)
 	Traceback (most recent call last):
 	...
-	TypeError: <width> must be an integer
+	TypeError: width must be an integer
