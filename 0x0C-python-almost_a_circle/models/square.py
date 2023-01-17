@@ -16,3 +16,13 @@ class Square(Rectangle):
         y = self.y
         s = super().width
         return "[Square] ({}) {}/{} - {}".format(idd, x, y, s)
+
+    @property
+    def size(self):
+        """size getter"""
+        return super().width
+
+    @size.setter
+    def size(self, size):
+        """size setter"""
+        super(Square, type(self)).width.fset(self, size)
