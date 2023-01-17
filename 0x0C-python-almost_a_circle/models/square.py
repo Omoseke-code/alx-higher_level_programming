@@ -26,3 +26,25 @@ class Square(Rectangle):
     def size(self, size):
         """size setter"""
         super(Square, type(self)).width.fset(self, size)
+
+    def update(self, *args, **kwargs):
+        """update"""
+        if len(args) > 0:
+            for num, arg in enumerate(args):
+                if num == 0:
+                    self.id = arg
+                elif num == 1:
+                    self.size = arg
+                elif num == 2:
+                    self.x = arg
+                elif num == 3:
+                    self.y = arg
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            elif "size" in kwargs:
+                self.size = kwargs["size"]
+            elif "x" in kwargs:
+                self.x = kwargs["x"]
+            elif "y" in kwargs:
+                self.y = kwargs["y"]
